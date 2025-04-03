@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/your-repo-name/static/css/main.8e1a26db.css",
-    "main.js": "/your-repo-name/static/js/main.abc9d018.js",
-    "static/js/453.731369a7.chunk.js": "/your-repo-name/static/js/453.731369a7.chunk.js",
-    "static/media/tendyOrder.jpg": "/your-repo-name/static/media/tendyOrder.8ae3b8b04abf987c1083.jpg",
-    "static/media/tendy2.jpg": "/your-repo-name/static/media/tendy2.cb0d5785a1347a05d663.jpg",
-    "static/media/pizza2.jpg": "/your-repo-name/static/media/pizza2.a531cefefe72e9282c7a.jpg",
-    "static/media/burger2.jpg": "/your-repo-name/static/media/burger2.2440cf3390d6cbe90bd8.jpg",
-    "static/media/pizzaOrder.jpg": "/your-repo-name/static/media/pizzaOrder.efc8a7c2d990be7d6b9f.jpg",
-    "static/media/burgerOrder.jpg": "/your-repo-name/static/media/burgerOrder.0164c7e4e4f58d0f0302.jpg",
-    "index.html": "/your-repo-name/index.html",
-    "main.8e1a26db.css.map": "/your-repo-name/static/css/main.8e1a26db.css.map",
-    "main.abc9d018.js.map": "/your-repo-name/static/js/main.abc9d018.js.map",
-    "453.731369a7.chunk.js.map": "/your-repo-name/static/js/453.731369a7.chunk.js.map"
+    "main.css": "/SigmaFoods/static/css/main.8e1a26db.css",
+    "main.js": "/SigmaFoods/static/js/main.c34307ca.js",
+    "static/js/453.731369a7.chunk.js": "/SigmaFoods/static/js/453.731369a7.chunk.js",
+    "static/media/tendyOrder.jpg": "/SigmaFoods/static/media/tendyOrder.8ae3b8b04abf987c1083.jpg",
+    "static/media/tendy2.jpg": "/SigmaFoods/static/media/tendy2.cb0d5785a1347a05d663.jpg",
+    "static/media/pizza2.jpg": "/SigmaFoods/static/media/pizza2.a531cefefe72e9282c7a.jpg",
+    "static/media/burger2.jpg": "/SigmaFoods/static/media/burger2.2440cf3390d6cbe90bd8.jpg",
+    "static/media/pizzaOrder.jpg": "/SigmaFoods/static/media/pizzaOrder.efc8a7c2d990be7d6b9f.jpg",
+    "static/media/burgerOrder.jpg": "/SigmaFoods/static/media/burgerOrder.0164c7e4e4f58d0f0302.jpg",
+    "index.html": "/SigmaFoods/index.html",
+    "main.8e1a26db.css.map": "/SigmaFoods/static/css/main.8e1a26db.css.map",
+    "main.c34307ca.js.map": "/SigmaFoods/static/js/main.c34307ca.js.map",
+    "453.731369a7.chunk.js.map": "/SigmaFoods/static/js/453.731369a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e1a26db.css",
-    "static/js/main.abc9d018.js"
+    "static/js/main.c34307ca.js"
   ]
 }
