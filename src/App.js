@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import CouponSlide from './components/CouponSlide';
 import Item from './components/Item';
+import Navbar from './components/Navbar';
 import burgerOrder from './images/burgerOrder.jpg';
 import pizzaOrder from './images/pizzaOrder.jpg';
 import tendyOrder from './images/tendyOrder.jpg';
@@ -31,7 +32,9 @@ const data = [
 function App() {
   return (
     <div style = {{backgroundColor: 'rgba(0,0,0,0.9)'}}>
+      <Navbar itemCount = {'0'}/>
       <CouponSlide />
+      <div style = {{color: 'white', paddingTop: '20px', paddingLeft: '42vw', fontSize: '30px', fontWeight: 'bold'}}>AVAILABLE ITEMS</div>
       <div style={{display:'flex', gap: '30px', padding: '30px' }}>
         {data.map((item, index) => (
           <Item

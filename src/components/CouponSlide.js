@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import burger from '../images/burger.jpg';
-import pizza from '../images/pizza.jpg';
-import tendy from '../images/tendy.jpg';
+import burger from '../images/burger2.jpg';
+import pizza from '../images/pizza2.jpg';
+import tendy from '../images/tendy2.jpg';
 import '../styles/CouponSlide.css'
 
 const images = [burger, pizza, tendy];
@@ -33,14 +33,18 @@ function CouponSlide() {
     <div 
       style={{ 
         backgroundImage: `url(${images[index]})`, 
-        height: '600px',
-        width: '100vw', 
+        paddingLeft: '21vw',
+        height: '400px',
+        marginTop: '50px',
+        width: '78vw', 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         backgroundRepeat: 'no-repeat',
-        transition: 'background-image 0.3s ease-in-out'
+        transition: 'background-image 0.5s ease-in-out',
+        border: '3px solid yellow',
+        borderRadius: '15px'
       }}
-      onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
+      onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.005)'}
       onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'} 
     ><button class = 'leftbutton' onClick = {decrementIndex}> ← </button>
     <button class = 'rightbutton' onClick = {incrementIndex}> → </button>

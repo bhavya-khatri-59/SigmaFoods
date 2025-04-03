@@ -1,0 +1,17 @@
+.left {
+    position: absolute;
+    top: 21px;
+    left: 60px;
+    transform: translateY(-50%);
+    color: black;
+    border: none;
+}
+  
+.right {
+    position: absolute;
+    top: 21px;
+    right: 100px;
+    transform: translateY(-50%);
+    color: black;
+    border: none;
+}
