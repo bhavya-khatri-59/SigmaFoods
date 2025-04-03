@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import CouponSlide from './components/CouponSlide';
 import Item from './components/Item';
@@ -12,7 +12,6 @@ const data = [
     title: "Burger",
     path: burgerOrder,
     description: "A juicy grilled patty with fresh veggies and melted cheese on a soft brioche bun.",
-
     price: "₹300",
   },
   {
@@ -30,12 +29,26 @@ const data = [
 ];
 
 function App() {
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [itemCount, setItemCount] = useState(0);
+
+  const handleAddToCart = (price) => {
+    setTotalPrice(prev => prev + price);
+    setItemCount(prev => prev + 1);
+  };
+
+  const confirmOrder = () => {
+    setTotalPrice(0);
+    setItemCount(0);
+    alert("Order Confirmed!")
+  }
+
   return (
-    <div style = {{backgroundColor: 'rgba(0,0,0,0.9)'}}>
-      <Navbar itemCount = {'0'}/>
+    <div style={{ backgroundColor: 'rgba(0,0,0,0.9)' }}>
+      <Navbar itemCount={itemCount} totalPrice={totalPrice} confirm = {confirmOrder}/>
       <CouponSlide />
-      <div style = {{color: 'white', paddingTop: '20px', paddingLeft: '42vw', fontSize: '30px', fontWeight: 'bold'}}>AVAILABLE ITEMS</div>
-      <div style={{display:'flex', gap: '30px', padding: '30px' }}>
+      <div style={{ color: 'white', paddingTop: '20px', paddingLeft: '42vw', fontSize: '30px', fontWeight: 'bold' }}>AVAILABLE ITEMS</div>
+      <div style={{ display: 'flex', gap: '30px', padding: '30px' }}>
         {data.map((item, index) => (
           <Item
             key={index}
@@ -43,6 +56,7 @@ function App() {
             title={item.title}
             description={item.description}
             price={item.price}
+            onAddToCart={() => handleAddToCart(parseInt(item.price.replace('₹', ''), 10))}
           />
         ))}
       </div>

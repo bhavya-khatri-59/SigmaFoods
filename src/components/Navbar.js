@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/Navbar.css'
+import '../App.css'
 
-function Navbar({ itemCount }) {
+function Navbar({itemCount, totalPrice, confirm}) {
   return (
         <div
         style={{
@@ -20,7 +21,9 @@ function Navbar({ itemCount }) {
         }}
         >
         <div class = "left">Sigma Foods</div>
-        <div class = "right">Cart: {itemCount} items</div>
+        <div class = "right">Cart: {itemCount} items | ₹{totalPrice}</div>
+        <button class = "confirm" 
+        onClick={confirm}>Confirm Order</button>
         </div>
   );
 }

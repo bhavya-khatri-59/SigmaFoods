@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Item({ path, title, price, description }) {
+function Item({ path, title, price, description, onAddToCart }) {
   return (
     <div style={{
       display: 'flex',
@@ -36,9 +36,27 @@ function Item({ path, title, price, description }) {
       ></div>
 
       <div>
-        <h3 style={{ margin: '5px 0', fontSize: '40px', position: 'relative', top: '-40px'}}>{title}</h3>
-        <p style={{ fontSize: '12px', color: 'white' ,position: 'relative', top: '-40px'}}>{description}</p>
-        <p style={{ fontWeight: 'bold', color: 'lime', fontSize: '25px' ,position: 'relative', top: '-50px'}}>{price}</p>
+        <h3 style={{ margin: '5px 0', fontSize: '40px', position: 'relative', top: '-20px'}}>{title}</h3>
+        <p style={{ fontSize: '12px', color: 'white' ,position: 'relative', top: '-20px'}}>{description}</p>
+        <p style={{ fontWeight: 'bold', color: 'lime', fontSize: '25px' ,position: 'relative', top: '-30px'}}>{price}</p>
+
+        <button 
+          onClick={onAddToCart} 
+          style={{
+            backgroundColor: 'green',
+            color: 'white',
+            fontSize: '16px',
+            padding: '10px 15px',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            marginTop: '5px',
+            position: 'relative',
+            top: '-40px'
+          }}
+        >
+          Add to Cart
+        </button>
       </div>
     </div>
   );
